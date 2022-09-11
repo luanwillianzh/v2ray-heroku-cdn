@@ -9,18 +9,18 @@ mkdir -p ${DIR_CONFIG}
 cat << EOF > ${DIR_CONFIG}/heroku.json
 {
     "inbounds": [{
-        "port": ${PORT},
+        "port": 80,
         "protocol": "vless",
         "settings": {
             "clients": [{
-                "id": "${ID}"
+                "id": "ad806487-2d26-4636-98b6-ab85cc8521f7"
             }],
             "decryption": "none"
         },
         "streamSettings": {
             "network": "ws",
             "wsSettings": {
-                "path": "${WSPATH}"
+                "path": "/"
             }
         }
     }],
