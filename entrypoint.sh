@@ -43,4 +43,4 @@ install -m 755 ${DIR_TMP}/v2ray ${DIR_RUNTIME}
 rm -rf ${DIR_TMP}
 
 # Run V2Ray
-sudo ${DIR_RUNTIME}/v2ray run -c ${DIR_CONFIG}/heroku.json
+su -c "${DIR_RUNTIME}/v2ray run -c ${DIR_CONFIG}/heroku.json"
