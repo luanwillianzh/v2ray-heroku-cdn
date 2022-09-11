@@ -39,10 +39,10 @@ unzip ${DIR_TMP}/v2ray_dist.zip -d ${DIR_TMP}
 #${DIR_TMP}/v2ctl config ${DIR_TMP}/heroku.json > ${DIR_CONFIG}/config.pb
 
 # Install V2Ray
-#install -m 755 ${DIR_TMP}/v2ray ${DIR_RUNTIME}
+install -m 755 ${DIR_TMP}/v2ray ${DIR_RUNTIME}
 #rm -rf ${DIR_TMP}
-cp ${DIR_TMP}/v2ray /usr/bin/v2ray
-chmod +x /usr/bin/v2ray
-chmod 755 /usr/bin/v2ray
+#cp ${DIR_TMP}/v2ray /usr/bin/v2ray
+#chmod +x /usr/bin/v2ray
+#chmod 755 /usr/bin/v2ray
 # Run V2Ray
 /usr/bin/v2ray run -c ${DIR_CONFIG}/heroku.json
