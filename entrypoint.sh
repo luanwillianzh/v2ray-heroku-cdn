@@ -9,7 +9,7 @@ mkdir -p ${DIR_CONFIG}
 cat << EOF > ${DIR_CONFIG}/heroku.json
 {
     "inbounds": [{
-        "port": 80,
+        "port": ${PORT},
         "protocol": "vmess",
         "settings": {
             "clients": [{
